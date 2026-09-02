@@ -1,5 +1,5 @@
 {
-  description = "NixOS configuration for MYHOSTNAME";
+  description = "NixOS configuration for aurora";
 
   inputs = {
     # The shared library: modules, options, and baseline config.
@@ -20,7 +20,7 @@
     {
       # The attribute name must match this machine's hostname, so
       # `sudo nixos-rebuild switch --flake ~/.nixos` finds it automatically.
-      nixosConfigurations.MYHOSTNAME = nixpkgs.lib.nixosSystem {
+      nixosConfigurations.aurora = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
           core.nixosModules.default
