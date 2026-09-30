@@ -6,11 +6,11 @@
         "noctalia": "noctalia"
       },
       "locked": {
-        "lastModified": 1790719170,
-        "narHash": "sha256-kHGXnxKJs1WW/90mz1JJppBVY9e9XE3BUV+rBLnXCN8=",
+        "lastModified": 1790789952,
+        "narHash": "sha256-3N02fm37wGjFAZ5T9D3cd6Mcv8l5J+inTT7I9Hd2OuA=",
         "owner": "nullcopy",
         "repo": "nixos-core",
-        "rev": "b3910d11f8c28231efbd0eb30e7d66bac90320e2",
+        "rev": "fcc03a56cd6e2d26bf156faf9f274eb8c7c76cef",
         "type": "github"
       },
       "original": {
