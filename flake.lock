@@ -3,14 +3,15 @@
     "core": {
       "inputs": {
         "nixpkgs": "nixpkgs",
-        "noctalia": "noctalia"
+        "noctalia": "noctalia",
+        "obscura": "obscura"
       },
       "locked": {
-        "lastModified": 1790789952,
-        "narHash": "sha256-3N02fm37wGjFAZ5T9D3cd6Mcv8l5J+inTT7I9Hd2OuA=",
+        "lastModified": 1791525679,
+        "narHash": "sha256-3dHr43u8blrfna9IN2Tcd/dqsBKeDmNEcWco3NG45hc=",
         "owner": "nullcopy",
         "repo": "nixos-core",
-        "rev": "fcc03a56cd6e2d26bf156faf9f274eb8c7c76cef",
+        "rev": "d483b0bb28a7894cd0ca6d37572cd8bfa6bc3ae0",
         "type": "github"
       },
       "original": {
@@ -19,13 +20,46 @@
         "type": "github"
       }
     },
+    "crane": {
+      "locked": {
+        "lastModified": 1754269165,
+        "narHash": "sha256-0tcS8FHd4QjbCVoxN9jI+PjHgA4vc/IjkUSp+N3zy0U=",
+        "owner": "ipetkov",
+        "repo": "crane",
+        "rev": "444e81206df3f7d92780680e45858e31d2f07a08",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ipetkov",
+        "repo": "crane",
+        "type": "github"
+      }
+    },
+    "flake-utils": {
+      "inputs": {
+        "systems": "systems"
+      },
+      "locked": {
+        "lastModified": 1731533236,
+        "narHash": "sha256-l0KFg5HjrsfsO/JpG+r7fRrqm12kzFHyUHqHCVpMMbI=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "11707dc2f618dd54ca8739b309ec4fc024de578b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1784120854,
-        "narHash": "sha256-KesHgItiZPgGX740axSiQLcIQ8D24MDqNpkKYWIek8k=",
+        "lastModified": 1791456040,
+        "narHash": "sha256-H83yz/do+hjOO0uujHyH8RgtIQP2v7Mw+cLwcZK/xKc=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "753cc8a3a87467296ddd1fa93f0cc3e81120ee46",
+        "rev": "e7439b6b14ad3cc35d05608ebca9bce01a25f5f8",
         "type": "github"
       },
       "original": {
@@ -57,6 +91,31 @@
         "type": "github"
       }
     },
+    "obscura": {
+      "inputs": {
+        "crane": "crane",
+        "flake-utils": "flake-utils",
+        "nixpkgs": [
+          "core",
+          "nixpkgs"
+        ],
+        "rust-overlay": "rust-overlay"
+      },
+      "locked": {
+        "lastModified": 1791396213,
+        "narHash": "sha256-fHfe7eSymHWdAlKTFBOszv7znSo5EPCf/zl82pJQ9Xo=",
+        "owner": "Sovereign-Engineering",
+        "repo": "obscuravpn-client",
+        "rev": "84ff6e482f162fd53ed796e266a41ee7b4dd582f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Sovereign-Engineering",
+        "ref": "v/1.182",
+        "repo": "obscuravpn-client",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "core": "core",
@@ -64,6 +123,42 @@
           "core",
           "nixpkgs"
         ]
+      }
+    },
+    "rust-overlay": {
+      "inputs": {
+        "nixpkgs": [
+          "core",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1755225702,
+        "narHash": "sha256-i7Rgs943NqX0RgQW0/l1coi8eWBj3XhxVggMpjjzTsk=",
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "rev": "4abaeba6b176979be0da0195b9e4ce86bc501ae4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "type": "github"
+      }
+    },
+    "systems": {
+      "locked": {
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default",
+        "type": "github"
       }
     }
   },
